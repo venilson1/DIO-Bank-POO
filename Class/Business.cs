@@ -41,7 +41,10 @@ namespace bank
 
     public void Transferir(double valorTransferencia, Business contaDestino)
     {
-      throw new System.NotImplementedException();
+      if (this.Sacar(valorTransferencia))
+      {
+        contaDestino.Depositar(valorTransferencia);
+      }
     }
   }
 }
