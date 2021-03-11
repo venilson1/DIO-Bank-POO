@@ -4,17 +4,17 @@ namespace bank
 {
   public class Business : Ibusiness
   {
-    private TipoConta TipoConta { get; set; }
-    private double Saldo { get; set; }
-    private double Credito { get; set; }
-    private string Nome { get; set; }
+    protected TipoConta TipoConta { get; set; }
+    protected double Saldo { get; set; }
+    protected double Credito { get; set; }
+    protected string Nome { get; set; }
 
-    public void Conta(TipoConta _tipoConta, double _saldo, double _credito, string _nome)
+    public void Conta(TipoConta tipoConta, double saldo, double credito, string nome)
     {
-      this.TipoConta = _tipoConta;
-      this.Saldo = _saldo;
-      this.Credito = _credito;
-      this.Nome = _nome;
+      this.TipoConta = tipoConta;
+      this.Saldo = saldo;
+      this.Credito = credito;
+      this.Nome = nome;
     }
 
     public void Depositar(double valorDeposito)
@@ -45,6 +45,12 @@ namespace bank
       {
         contaDestino.Depositar(valorTransferencia);
       }
+    }
+
+    public override string ToString()
+    {
+      string retorno = $"TipoConta {this.TipoConta} | Nome: {this.Nome} | Saldo: {this.Saldo} | Credito: {this.Credito} |";
+      return retorno;
     }
   }
 }
