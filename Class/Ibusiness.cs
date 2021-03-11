@@ -3,10 +3,10 @@ namespace bank
   public interface Ibusiness
   {
     void Conta(
-      TipoConta _tipoConta,
-      double _saldo,
-      double _credito,
-      string _nome
+      TipoConta tipoConta,
+      double saldo,
+      double credito,
+      string nome
     );
 
     bool Sacar(double valorSaque);
