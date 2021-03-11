@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\venil\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\venil\\.nuget\\packages"
+    ]
+  }
+}
