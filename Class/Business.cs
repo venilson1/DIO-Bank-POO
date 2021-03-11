@@ -1,3 +1,5 @@
+using System;
+
 namespace bank
 {
   public class Business : Ibusiness
@@ -6,10 +8,13 @@ namespace bank
     private double Saldo { get; set; }
     private double Credito { get; set; }
     private string Nome { get; set; }
-    
+
     public void Conta(TipoConta _tipoConta, double _saldo, double _credito, string _nome)
     {
-      throw new System.NotImplementedException();
+      this.TipoConta = _tipoConta;
+      this.Saldo = _saldo;
+      this.Credito = _credito;
+      this.Nome = _nome;
     }
 
     public void Depositar(double valorDeposito)
@@ -19,7 +24,18 @@ namespace bank
 
     public bool Sacar(double valorSaque)
     {
-      throw new System.NotImplementedException();
+      //validação saldo insuficiente
+      if (this.Saldo - valorSaque < (this.Credito * -1))
+      {
+        Console.WriteLine("Saldo Insuficiente");
+        return false;
+      }
+
+      this.Saldo = this.Saldo - valorSaque;
+
+      Console.WriteLine($"Saldo atual da conta de {this.Nome} é {this.Saldo}");
+
+      return true;
     }
 
     public void Transferir(double valorTransferencia, Business contaDestino)
