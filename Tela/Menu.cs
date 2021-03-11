@@ -2,7 +2,7 @@ using System;
 
 namespace bank
 {
-  public class Menu
+  public class Menu : TelaGeral
   {
 
     public static void principal()
@@ -14,19 +14,19 @@ namespace bank
         switch (opcaoUsuario)
         {
           case "1":
-            //ListarContas();
+            ListarContas();
             break;
           case "2":
-            //InserirConta();
+            InserirConta();
             break;
           case "3":
-            //Transferir();
+            TransferenciaContas();
             break;
           case "4":
-            //Sacar();
+            SacarConta();
             break;
           case "5":
-            //Depositar();
+            DepositarConta();
             break;
           case "C":
             Console.Clear();
