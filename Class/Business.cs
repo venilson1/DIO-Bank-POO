@@ -19,7 +19,8 @@ namespace bank
 
     public void Depositar(double valorDeposito)
     {
-      throw new System.NotImplementedException();
+      this.Saldo = this.Saldo + valorDeposito;
+      Console.WriteLine($"Saldo atual da conta de {this.Nome} é {this.Saldo}");
     }
 
     public bool Sacar(double valorSaque)
