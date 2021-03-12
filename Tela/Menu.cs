@@ -1,13 +1,17 @@
 using System;
 using System.Collections.Generic;
+using DIO_Bank_POO.Funcoes;
 
 namespace bank
 {
   public class Menu
   {
     static List<Conta> listContas = new List<Conta>();
+    
     public static void principal()
     {
+      Funcoes Conta = new Funcoes();
+      
       string opcaoUsuario = obterOpcaoUsuario();
 
       while (opcaoUsuario.ToUpper() != "X")
@@ -15,19 +19,19 @@ namespace bank
         switch (opcaoUsuario)
         {
           case "1":
-            ListarContas();
+            Conta.ListarContas();
             break;
           case "2":
-            InserirConta();
+            Conta.InserirConta();
             break;
           case "3":
-            Transferir();
+            Conta.Transferir();
             break;
           case "4":
-            Sacar();
+            Conta.Sacar();
             break;
           case "5":
-            Depositar();
+            Conta.Depositar();
             break;
           case "C":
             Console.Clear();
@@ -41,85 +45,6 @@ namespace bank
 
       Console.WriteLine("Obrigado por utilizar nossos serviços");
       Console.ReadLine();
-    }
-
-    private static void Transferir()
-    {
-      Console.WriteLine("Digite o numero da conta Origem:");
-      int indiceContaOrigem = int.Parse(Console.ReadLine());
-
-      Console.WriteLine("Digite o numero da conta Destino:");
-      int indiceContaDestino = int.Parse(Console.ReadLine());
-
-      Console.WriteLine("Digite o valor a ser transferido:");
-      double valorTransferencia = int.Parse(Console.ReadLine());
-
-      listContas[indiceContaOrigem].Transferir(valorTransferencia, listContas[indiceContaDestino]);
-    }
-
-    private static void Depositar()
-    {
-      Console.WriteLine("Digite o numero da conta:");
-      int indiceConta = int.Parse(Console.ReadLine());
-
-      Console.WriteLine("Digite o valor a ser depositado:");
-      int valorDeposito = int.Parse(Console.ReadLine());
-
-      listContas[indiceConta].Depositar(valorDeposito);
-    }
-
-    private static void Sacar()
-    {
-      Console.WriteLine("Digite o número da conta");
-      int indiceconta = int.Parse(Console.ReadLine());
-
-      Console.WriteLine("Digite o valor a ser sacado");
-      double valorSaque = double.Parse(Console.ReadLine());
-
-      listContas[indiceconta].Sacar(valorSaque);
-    }
-
-    private static void ListarContas()
-    {
-      Console.WriteLine("listar contas");
-
-      if (listContas.Count == 0)
-      {
-        Console.WriteLine("\nNenhuma conta cadastrada\n");
-        return;
-      }
-
-      for (int i = 0; i < listContas.Count; i++)
-      {
-        Conta conta = listContas[i];
-        Console.Write($"\n#.{i}  {conta}");
-      }
-    }
-
-    private static void InserirConta()
-    {
-      Console.WriteLine("Inserir nova conta: ");
-
-      Console.WriteLine("Digite 1 para pesso fisica ou 2 para pessoa juridica: ");
-      int entradaTipoConta = int.Parse(Console.ReadLine());
-
-      Console.WriteLine("Digite o nome do cliente: ");
-      string entradaNome = Console.ReadLine();
-
-      Console.WriteLine("Digite o saldo inicial: ");
-      double entradaSaldo = double.Parse(Console.ReadLine());
-
-      Console.WriteLine("Digite  crédito: ");
-      double entradaCredito = double.Parse(Console.ReadLine());
-
-      Conta novaConta = new Conta(
-        (TipoConta)entradaTipoConta,
-        entradaSaldo,
-        entradaCredito,
-        entradaNome
-        );
-
-      listContas.Add(novaConta);
     }
 
     private static string obterOpcaoUsuario()

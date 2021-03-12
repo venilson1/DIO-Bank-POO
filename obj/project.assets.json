@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\venil\\Desktop\\bank\\bank.csproj",
+      "projectUniqueName": "C:\\Users\\venil\\DIO-Bank-POO\\bank.csproj",
       "projectName": "bank",
-      "projectPath": "C:\\Users\\venil\\Desktop\\bank\\bank.csproj",
+      "projectPath": "C:\\Users\\venil\\DIO-Bank-POO\\bank.csproj",
       "packagesPath": "C:\\Users\\venil\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\venil\\Desktop\\bank\\obj\\",
+      "outputPath": "C:\\Users\\venil\\DIO-Bank-POO\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\venil\\AppData\\Roaming\\NuGet\\NuGet.Config"
