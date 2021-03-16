@@ -4,8 +4,8 @@ Projeto desenvolvido durante os estudos do bootcamp Localiza .NET Developer. Ele
 
 ## Começando...
 
-- [.NET Framework 4.8: Necessário para executar o projeto .NET](https://dotnet.microsoft.com/download/dotnet-framework/net48)
-- [Visual Studio: Para desenvolvimento do projeto](https://visualstudio.microsoft.com/pt-br/downloads/)
+- [.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/net48): Necessário para executar o projeto .NET
+- [Visual Studio](https://visualstudio.microsoft.com/pt-br/downloads/): Para desenvolvimento do projeto
 
 
 ## Desenvolvimento
