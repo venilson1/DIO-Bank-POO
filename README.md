@@ -10,7 +10,7 @@ Projeto desenvolvido durante os estudos do bootcamp Localiza .NET Developer. Ele
 
 ## Desenvolvimento
 
-Para iniciar o desenvolvimento, é necessário clonar o projeto do GitHub num diretório de sua preferência:
+Para iniciar o desenvolvimento, é necessário clonar o projeto num diretório de sua preferência, abra o seu terminal e execute:
 ```shell
 cd "diretorio de sua preferencia"
 git clone https://github.com/venilson1/DIO-Bank-POO
