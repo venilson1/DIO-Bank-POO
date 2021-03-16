@@ -19,7 +19,7 @@ git clone https://github.com/venilson1/DIO-Bank-POO
 
 Na Raíz do prpjeto execute o comando `dotnet run`.
 
-### Features 👌
+### Features 💻
 
 - ✅Listagem de contas 
 - ✅Cadastro de contas
