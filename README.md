@@ -21,11 +21,11 @@ Na Raíz do prpjeto execute o comando `dotnet run`.
 
 ### Features
 
-- [x] Listagem de contas 
-- [x] Cadastro de contas
-- [x] Transferir
-- [x] Sacar
-- [x] Depositar
+- ✅Listagem de contas 
+- ✅Cadastro de contas
+- ✅Transferir
+- ✅Sacar
+- ✅Depositar
 
 
 
