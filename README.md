@@ -1,4 +1,4 @@
-# DIO-Bank-POO
+# DIO Bank POO
 
 Projeto desenvolvido durante os estudos do bootcamp Localiza .NET Developer. Ele simula as operações bancarias utilizando os pilares da programação orientada a objetos e seus modificadores de acesso para controlar o acesso dos métodos e propiedades.
 
