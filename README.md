@@ -15,5 +15,17 @@ Para iniciar o desenvolvimento, é necessário clonar o projeto num diretório d
 cd "diretorio de sua preferencia"
 git clone https://github.com/venilson1/DIO-Bank-POO
 ```
+## Executar o Projeto 
+
+Na Raíz do prpjeto execute o comando `dotnet run`.
+
+### Features
+
+- [x] Listagem de contas 
+- [x] Cadastro de contas
+- [x] Transferir
+- [x] Sacar
+- [x] Depositar
+
 
 
